@@ -7,8 +7,14 @@
     <title>AI Dection</title>
     <script src="face-api.min.js"></script>
     <script defer src="script.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css" integrity="sha512-byErQdWdTqREz6DLAA9pCnLbdoGGhXfU6gm1c8bkf7F51JVmUBlayGe2A31VpXWQP+eiJ3ilTAZHCR3vmMyybA==" crossorigin="anonymous" />
     <style>
-        body{
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .video-box{
             margin: 0px;
             padding:0px;
             box-sizing: border-box;
@@ -26,9 +32,23 @@
     </style>
 </head>
 <body>
-   
-    <video id='video' width="720" height="560" autoplay muted ></video>
 
+   <div class="video-box" id="video-box">
+    <video id='video' width="720" height="560" autoplay muted ></video>
+   </div>
     
+
+    <footer class="container-fluid has-background-dark" >
+        <div class="content has-text-right has-text-white" style="padding:10px;">
+            <div class="content">
+                <div class="title ">
+                    <a class="has-text-white" href="https://www.futane.tk" target="_blank">webrash</a>
+                </div>
+                <div class="subtitle has-text-white">
+                    &copy; copyright reserved 
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
